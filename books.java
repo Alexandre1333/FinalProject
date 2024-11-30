@@ -10,7 +10,7 @@ public class books {
         this.title = title;
         this.author = author;
         this.year = year;
-        this.saleNumbers = saleNumbers //figure this part out
+        this.saleNumbers = saleNumbers; //figure this part out
     }
     //the other one :)
 
@@ -59,9 +59,9 @@ public class books {
     }
 
     public void setSaleNumbers(int booksSold, int month) {
-        if (month >= 1 && month <= 6) {
-            return this.saleNumbers[month - 1];
-        } else {
+        if(month >= 1 && month <= 6) {
+        }
+        else {
             throw new IllegalArgumentException("Month must be between 1 and 6.");
         }
     }
@@ -79,8 +79,8 @@ public class books {
         int[] sales = {100, 200, 150, 120, 180, 220};
     books book = new books("Catching Fire", "Collins", 1949, sales );
 
-        System.out.println("Total Sales" + book.getTotalSales());
-        System.out.println("Sales in May: " + book.getSaleNumbers(5));
+        System.out.println("Total Sales " + book.getTotalSales());
+        System.out.println("Sales in May: " + book.getSaleNumbers());
         book.setSaleNumbers(250, 6);
         System.out.println("updated total sales: " + book.getTotalSales());
 
