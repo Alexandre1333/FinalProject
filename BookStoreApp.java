@@ -9,7 +9,7 @@ public class BookStoreApp {
 
         Scanner userInput = new Scanner(System.in);
         int choice;
-
+        // Menu options with error handling for file reading
         do {
             System.out.println("\n--- Program Menu ---");
             System.out.println("\t1: Read books from database");
