@@ -52,9 +52,12 @@ public class Books {
 
 
     public void setSaleNumbers(int sales, int month) {
-        if (month < 1 || month > 6) {
-            saleNumbers[month - 1] = sales;
+        if (saleNumbers.length < month) {
+            int[] newSaleNumbers = new int[month];
+            System.arraycopy(saleNumbers, 0, newSaleNumbers, 0, saleNumbers.length);
+            saleNumbers = newSaleNumbers;
         }
+        saleNumbers[month - 1] = sales;
     }
 
     public int getSaleNumbers(int month) {
