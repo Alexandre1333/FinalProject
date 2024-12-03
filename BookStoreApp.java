@@ -5,6 +5,7 @@ import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class BookStoreApp {
+
     public static void main(String[] args) {
         Books[] booksArray = new Books[7];
 
@@ -100,6 +101,7 @@ public class BookStoreApp {
             System.out.println("Book with ID " + id + " not found.");
         }
     }
+
     // Show sales in a given month,
     private static void showSalesForMonth(Books[] booksArray, Scanner userInput) {
         System.out.print("Enter month (1-6): ");
@@ -143,4 +145,3 @@ public class BookStoreApp {
         printBookList(sortedBooks);
     }
 }
-
