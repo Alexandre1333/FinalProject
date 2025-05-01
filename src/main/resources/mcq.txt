@@ -1,0 +1,32 @@
+20. If you set a scene's size to a width and height that is smaller than the width and height of the image to be displayed,
+a. only part of the image will be displayed
+b. the image will only occupy part of the window
+c. the scene will automatically be resized to fit the image
+d. the image will automatically be resized to fit the window
+ANS: A
+21.	What does the following statement do?
+Image puppy = new Image("file:C:\\images\terrier.jpg");
+a. It creates an instance of the ImageView class with the terrier.jpg file passed to the constructor.
+b. It loads an image named "images\terrier.jpg" and stores the image in the Image variable.
+c. It loads an image file named terrier.jpg which is found in the images folder on the user's C-drive.
+d. Nothing; it is not possible to include a path to a file when using the Image class.
+ANS: C
+22.	Assuming three ImageView objects named puppy, kitten, and bunny have been created, what does the following statement do?
+HBox hbox = new HBox(5, puppy, kitten, bunny);
+a. The number 5 refers to the number of ImageView objects so there will be two empty spots for two more ImageView objects.
+b. There will be five pixels of space between the controls horizontally in the container.
+c. The controls will be displayed vertically with five pixels between them.
+d. The statement does nothing; it contains an error.
+ANS: B
+23.	Which package contains the Insets class?
+a. javafx.scene
+b. javafx.layout
+c. javafx.Insets
+d. javafx.geometry
+ANS: D
+24.	Which of the following statements correctly adds a label to the first row and second column of a GridPane object?
+a. gridpane.add(myLabel, 1, 2);
+b. gridpane.add(myLabel, 2, 1);
+c. gridpane.add(myLabel, 0, 1);
+d. gridpane.add(myLabel, 1, 0);
+ANS: C

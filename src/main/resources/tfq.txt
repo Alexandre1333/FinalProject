@@ -1,0 +1,20 @@
+1.   The command line interface is an event-driven interface.
+    ANS:	F
+2.	When programming in JavaFX, you should think of the GUI objects as nodes in a tree-like hierarchical structure known as a scene graph.
+    ANS:	T
+3.  All JavaFX applicatons must extend the Application class.
+    ANS:	T
+    4.	The "preferred size" of a scene is usually the whole size of the user's monitor.
+    ANS:	F
+	5.	To display an image in a JavaFX application, you use either the Image or ImageView class.
+    ANS:	F
+6.	Padding is space that appears around the inside edges of a container.
+    ANS:	T
+7.	In a JavaFX application, you are limited to a single layout container since layout containers cannot be nested.
+    ANS:	F
+8.	The BorderPane container always displays its content in five regions which are top, bottom, left, right, and center and each region must be used.
+    ANS:	F
+9.	An event object is created when an event takes place.
+    ANS:	T
+10.	An event handler class will not be executed unless it has been registered with the correct control.
+    ANS:	T
