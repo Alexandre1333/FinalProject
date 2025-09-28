@@ -31,6 +31,7 @@ public class QuestionBank {
             System.out.println(q);
         }
     }
+
     public void readMCQ(String fname) {
         try {
             File fileObj = new File(fname);
@@ -42,14 +43,14 @@ public class QuestionBank {
                 String questionText = items[1];
                 LinkedList<String> options = new LinkedList<>();
                 String firstThreeLetters;
-                do{
+                do {
                     line = scanner.nextLine().trim();
                     firstThreeLetters = line.substring(0, 3);
                     if (!firstThreeLetters.equals("ANS")) {
                         String optionText = line.substring(2).trim();
                         options.add(optionText);
                     }
-                }while(firstThreeLetters.equals("ANS"));
+                } while (firstThreeLetters.equals("ANS"));
                 String correctAnswer = line.substring(4).trim();
 
                 MCQuestion question = new MCQuestion(questionText, correctAnswer, QuestionType.MCQ, options);
@@ -58,7 +59,7 @@ public class QuestionBank {
                 System.out.println(line);
             }
         } catch (FileNotFoundException ex) {
-             System.out.println("Error file not found: " + fname);
+            System.out.println("Error file not found: " + fname);
         }
     }
 }
